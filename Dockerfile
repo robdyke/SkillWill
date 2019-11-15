@@ -1,5 +1,5 @@
 # Build
-FROM maven:3.6.1-jdk-12 as maven
+FROM maven:3-jdk-13 as maven
 
 WORKDIR /usr/src/app
 COPY pom.xml pom.xml
@@ -8,7 +8,7 @@ COPY src src
 RUN mvn clean install
 
 # Run
-FROM openjdk:12.0.1-jdk
+FROM openjdk:13
 ENV PORT $PORT
 ENV MONGOURI $MONGOURI
 ENV GOOGLEID $GOOGLEID
