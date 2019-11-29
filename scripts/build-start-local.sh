@@ -2,5 +2,5 @@
 
 cd ..
 
-mvn clean install
-java -jar target/skillwill.jar --spring.profiles.active=dev
+gradle clean build
+java -jar build/libs/skillwill-0.0.1-SNAPSHOT.jar --spring.profiles.active=dev

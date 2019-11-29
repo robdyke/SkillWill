@@ -25,7 +25,7 @@ Every user can define their personal levels of interest and knowledge for each s
 ## Infrastructure
 If you don't want to used the dockerized development setup, you'll need to have some stuff installed to build and run skillwill locally:
 * Java 12
-* maven
+* gradle
 * A local [MongoDB](https://www.mongodb.com/)
 
 ## Building
