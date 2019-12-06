@@ -30,10 +30,6 @@ If you don't want to used the dockerized development setup, you'll need to have 
 * run `docker-compose up --build`
 * the application starts on port 8080
 
-## Deploy
-The app is deployed via heroku, assuming you have an account and have the required permissions to deploy the project, just run:
-`scripts/deploy.sh`
-
 # Important URLs
 * `/`: Application main view
 * `/swagger`: Interactive API documentation
