@@ -1,0 +1,55 @@
+plugins {
+	id 'org.springframework.boot' version '2.2.1.RELEASE'
+	id 'io.spring.dependency-management' version '1.0.8.RELEASE'
+	id 'java'
+}
+
+repositories {
+    mavenLocal()
+    maven {
+        url = 'https://repo.maven.apache.org/maven2'
+    }
+
+    maven {
+        url = 'https://oss.jfrog.org/artifactory/oss-snapshot-local/'
+    }
+
+    maven {
+        url = 'https://oss.sonatype.org/content/repositories/snapshots/'
+    }
+}
+
+group = 'de.mindmatters'
+version = ''
+sourceCompatibility = '13'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-aop'
+    implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
+    implementation 'org.json:json:20190722'
+    implementation 'org.springframework.retry:spring-retry:1.2.4.RELEASE'
+    implementation 'org.springframework.security:spring-security-oauth2-client:5.2.1.RELEASE'
+    implementation 'org.springframework.security:spring-security-oauth2-jose:5.2.1.RELEASE'
+    implementation 'io.springfox:springfox-swagger2:3.0.0-SNAPSHOT'
+    implementation 'io.springfox:springfox-swagger-ui:3.0.0-SNAPSHOT'
+    implementation 'io.springfox:springfox-spring-web:3.0.0-SNAPSHOT'
+    implementation 'io.springfox:springfox-spring-webmvc:3.0.0-SNAPSHOT'
+    implementation 'javax.xml.bind:jaxb-api:2.4.0-b180830.0359'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test:2.2.1.RELEASE'
+    testImplementation 'de.flapdoodle.embed:de.flapdoodle.embed.mongo:2.2.0'
+	testImplementation('org.springframework.boot:spring-boot-starter-test') {
+		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+	}
+}
+
+test {
+	useJUnitPlatform()
+}
