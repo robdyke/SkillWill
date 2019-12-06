@@ -18,17 +18,10 @@ Every user can define their personal levels of interest and knowledge for each s
 * You want to get better at x? → Show your interest for x and people who need some to do x will find you.
 * ...
 
-# Development Setup
-
-## Infrastructure
-If you don't want to used the dockerized development setup, you'll need to have some stuff installed to build and run skillwill locally:
-* Java 13
-* gradle
-* A local [MongoDB](https://www.mongodb.com/)
-
-## Building with Docker
+# Building with Docker
 * run `docker-compose up --build`
 * the application starts on port 8080
+See `frontend/README.md`/`backend/README.md` for more information on how to build the respective subproject.
 
 # Important URLs
 * `/`: Application main view
