@@ -21,6 +21,7 @@ Every user can define their personal levels of interest and knowledge for each s
 # Building with Docker
 * run `docker-compose up --build`
 * the application starts on port 8080
+
 See `frontend/README.md`/`backend/README.md` for more information on how to build the respective subproject.
 
 # Important URLs
